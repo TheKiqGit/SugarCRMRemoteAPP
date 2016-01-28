@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SugarCrmAPIRepository.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    SugarCrmAPIRepository *crmRepo = [[SugarCrmAPIRepository alloc] init];
+    [crmRepo requestTokenWithUserName:@"" andPassword:@""];
+    
 }
 
 - (void)didReceiveMemoryWarning {

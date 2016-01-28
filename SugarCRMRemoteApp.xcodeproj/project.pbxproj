@@ -13,6 +13,8 @@
 		461BB4FD1C5990A20044B714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461BB4FB1C5990A20044B714 /* Main.storyboard */; };
 		461BB4FF1C5990A20044B714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461BB4FE1C5990A20044B714 /* Assets.xcassets */; };
 		461BB5021C5990A20044B714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461BB5001C5990A20044B714 /* LaunchScreen.storyboard */; };
+		461BB50D1C5990EA0044B714 /* SugarCrmOauthToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 461BB50C1C5990EA0044B714 /* SugarCrmOauthToken.m */; };
+		461BB5101C5990F10044B714 /* SugarCrmAPIRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 461BB50F1C5990F10044B714 /* SugarCrmAPIRepository.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		461BB4FE1C5990A20044B714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		461BB5011C5990A20044B714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		461BB5031C5990A20044B714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		461BB50B1C5990EA0044B714 /* SugarCrmOauthToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SugarCrmOauthToken.h; sourceTree = "<group>"; };
+		461BB50C1C5990EA0044B714 /* SugarCrmOauthToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SugarCrmOauthToken.m; sourceTree = "<group>"; };
+		461BB50E1C5990F10044B714 /* SugarCrmAPIRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SugarCrmAPIRepository.h; sourceTree = "<group>"; };
+		461BB50F1C5990F10044B714 /* SugarCrmAPIRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SugarCrmAPIRepository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		461BB4F11C5990A20044B714 /* SugarCRMRemoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				461BB50A1C5990D00044B714 /* DataLayer */,
+				461BB5091C5990C40044B714 /* Entities */,
 				461BB4F51C5990A20044B714 /* AppDelegate.h */,
 				461BB4F61C5990A20044B714 /* AppDelegate.m */,
 				461BB4F81C5990A20044B714 /* ViewController.h */,
@@ -77,6 +85,24 @@
 				461BB4F31C5990A20044B714 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		461BB5091C5990C40044B714 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				461BB50B1C5990EA0044B714 /* SugarCrmOauthToken.h */,
+				461BB50C1C5990EA0044B714 /* SugarCrmOauthToken.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		461BB50A1C5990D00044B714 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				461BB50E1C5990F10044B714 /* SugarCrmAPIRepository.h */,
+				461BB50F1C5990F10044B714 /* SugarCrmAPIRepository.m */,
+			);
+			name = DataLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				461BB4FA1C5990A20044B714 /* ViewController.m in Sources */,
+				461BB50D1C5990EA0044B714 /* SugarCrmOauthToken.m in Sources */,
 				461BB4F71C5990A20044B714 /* AppDelegate.m in Sources */,
 				461BB4F41C5990A20044B714 /* main.m in Sources */,
+				461BB5101C5990F10044B714 /* SugarCrmAPIRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
