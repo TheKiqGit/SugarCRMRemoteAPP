@@ -13,8 +13,11 @@
 		461BB4FD1C5990A20044B714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461BB4FB1C5990A20044B714 /* Main.storyboard */; };
 		461BB4FF1C5990A20044B714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461BB4FE1C5990A20044B714 /* Assets.xcassets */; };
 		461BB5021C5990A20044B714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461BB5001C5990A20044B714 /* LaunchScreen.storyboard */; };
-		461BB50D1C5990EA0044B714 /* SugarCrmOauthToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 461BB50C1C5990EA0044B714 /* SugarCrmOauthToken.m */; };
-		461BB5101C5990F10044B714 /* SugarCrmAPIRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 461BB50F1C5990F10044B714 /* SugarCrmAPIRepository.m */; };
+		461BB50D1C5990EA0044B714 /* SRASugarCRMOauthToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 461BB50C1C5990EA0044B714 /* SRASugarCRMOauthToken.m */; };
+		461BB5101C5990F10044B714 /* SRASugarCRMRemoteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 461BB50F1C5990F10044B714 /* SRASugarCRMRemoteService.m */; };
+		464D44DA1C76C5DD0011BDBE /* SRASugarCRMRemoteService_NSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 464D44D91C76C5DD0011BDBE /* SRASugarCRMRemoteService_NSURLConnection.m */; };
+		464D44E21C76E4130011BDBE /* NSArray+Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 464D44E11C76E4130011BDBE /* NSArray+Enumerable.m */; };
+		464D44E51C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 464D44E41C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +31,18 @@
 		461BB4FE1C5990A20044B714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		461BB5011C5990A20044B714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		461BB5031C5990A20044B714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		461BB50B1C5990EA0044B714 /* SugarCrmOauthToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SugarCrmOauthToken.h; sourceTree = "<group>"; };
-		461BB50C1C5990EA0044B714 /* SugarCrmOauthToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SugarCrmOauthToken.m; sourceTree = "<group>"; };
-		461BB50E1C5990F10044B714 /* SugarCrmAPIRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SugarCrmAPIRepository.h; sourceTree = "<group>"; };
-		461BB50F1C5990F10044B714 /* SugarCrmAPIRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SugarCrmAPIRepository.m; sourceTree = "<group>"; };
+		461BB50B1C5990EA0044B714 /* SRASugarCRMOauthToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRASugarCRMOauthToken.h; sourceTree = "<group>"; };
+		461BB50C1C5990EA0044B714 /* SRASugarCRMOauthToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRASugarCRMOauthToken.m; sourceTree = "<group>"; };
+		461BB50E1C5990F10044B714 /* SRASugarCRMRemoteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRASugarCRMRemoteService.h; sourceTree = "<group>"; };
+		461BB50F1C5990F10044B714 /* SRASugarCRMRemoteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRASugarCRMRemoteService.m; sourceTree = "<group>"; };
+		461BB5121C603E180044B714 /* SRASerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRASerializable.h; sourceTree = "<group>"; };
+		464D44D81C76C5DD0011BDBE /* SRASugarCRMRemoteService_NSURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRASugarCRMRemoteService_NSURLConnection.h; sourceTree = "<group>"; };
+		464D44D91C76C5DD0011BDBE /* SRASugarCRMRemoteService_NSURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRASugarCRMRemoteService_NSURLConnection.m; sourceTree = "<group>"; };
+		464D44DC1C76D7090011BDBE /* SRASugarCRMRemoteService_SubClassMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRASugarCRMRemoteService_SubClassMethods.h; sourceTree = "<group>"; };
+		464D44E01C76E4130011BDBE /* NSArray+Enumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Enumerable.h"; sourceTree = "<group>"; };
+		464D44E11C76E4130011BDBE /* NSArray+Enumerable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Enumerable.m"; sourceTree = "<group>"; };
+		464D44E31C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRASugarCRMRemoteService_NSURLConnection_Request.h; sourceTree = "<group>"; };
+		464D44E41C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRASugarCRMRemoteService_NSURLConnection_Request.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +75,12 @@
 		461BB4F11C5990A20044B714 /* SugarCRMRemoteApp */ = {
 			isa = PBXGroup;
 			children = (
-				461BB50A1C5990D00044B714 /* DataLayer */,
-				461BB5091C5990C40044B714 /* Entities */,
 				461BB4F51C5990A20044B714 /* AppDelegate.h */,
 				461BB4F61C5990A20044B714 /* AppDelegate.m */,
-				461BB4F81C5990A20044B714 /* ViewController.h */,
-				461BB4F91C5990A20044B714 /* ViewController.m */,
+				464D44DF1C76E3C50011BDBE /* categories */,
+				461BB5111C6036420044B714 /* ViewControllers */,
+				461BB5091C5990C40044B714 /* Models */,
+				461BB50A1C5990D00044B714 /* Services */,
 				461BB4FB1C5990A20044B714 /* Main.storyboard */,
 				461BB4FE1C5990A20044B714 /* Assets.xcassets */,
 				461BB5001C5990A20044B714 /* LaunchScreen.storyboard */,
@@ -87,22 +98,47 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		461BB5091C5990C40044B714 /* Entities */ = {
+		461BB5091C5990C40044B714 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				461BB50B1C5990EA0044B714 /* SugarCrmOauthToken.h */,
-				461BB50C1C5990EA0044B714 /* SugarCrmOauthToken.m */,
+				461BB50B1C5990EA0044B714 /* SRASugarCRMOauthToken.h */,
+				461BB50C1C5990EA0044B714 /* SRASugarCRMOauthToken.m */,
+				461BB5121C603E180044B714 /* SRASerializable.h */,
 			);
-			name = Entities;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		461BB50A1C5990D00044B714 /* DataLayer */ = {
+		461BB50A1C5990D00044B714 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				461BB50E1C5990F10044B714 /* SugarCrmAPIRepository.h */,
-				461BB50F1C5990F10044B714 /* SugarCrmAPIRepository.m */,
+				461BB50E1C5990F10044B714 /* SRASugarCRMRemoteService.h */,
+				461BB50F1C5990F10044B714 /* SRASugarCRMRemoteService.m */,
+				464D44DC1C76D7090011BDBE /* SRASugarCRMRemoteService_SubClassMethods.h */,
+				464D44D81C76C5DD0011BDBE /* SRASugarCRMRemoteService_NSURLConnection.h */,
+				464D44D91C76C5DD0011BDBE /* SRASugarCRMRemoteService_NSURLConnection.m */,
+				464D44E31C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.h */,
+				464D44E41C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.m */,
 			);
-			name = DataLayer;
+			name = Services;
+			sourceTree = "<group>";
+		};
+		461BB5111C6036420044B714 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				461BB4F81C5990A20044B714 /* ViewController.h */,
+				461BB4F91C5990A20044B714 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		464D44DF1C76E3C50011BDBE /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				464D44E01C76E4130011BDBE /* NSArray+Enumerable.h */,
+				464D44E11C76E4130011BDBE /* NSArray+Enumerable.m */,
+			);
+			name = categories;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,10 +212,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				461BB4FA1C5990A20044B714 /* ViewController.m in Sources */,
-				461BB50D1C5990EA0044B714 /* SugarCrmOauthToken.m in Sources */,
+				464D44E21C76E4130011BDBE /* NSArray+Enumerable.m in Sources */,
+				464D44E51C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.m in Sources */,
+				461BB50D1C5990EA0044B714 /* SRASugarCRMOauthToken.m in Sources */,
 				461BB4F71C5990A20044B714 /* AppDelegate.m in Sources */,
 				461BB4F41C5990A20044B714 /* main.m in Sources */,
-				461BB5101C5990F10044B714 /* SugarCrmAPIRepository.m in Sources */,
+				461BB5101C5990F10044B714 /* SRASugarCRMRemoteService.m in Sources */,
+				464D44DA1C76C5DD0011BDBE /* SRASugarCRMRemoteService_NSURLConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +365,7 @@
 				461BB5081C5990A20044B714 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

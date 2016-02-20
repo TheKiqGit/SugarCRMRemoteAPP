@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SugarCrmAPIRepository.h"
+#import "SRASugarCRMRemoteService.h"
 
 @interface ViewController ()
 
@@ -18,8 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    SugarCrmAPIRepository *crmRepo = [[SugarCrmAPIRepository alloc] init];
-    [crmRepo requestTokenWithUserName:@"" andPassword:@""];
+    __weak typeof(self) weakSelf = self;
+    SRASugarCRMRemoteService *SugarService = [SRASugarCRMRemoteService sharedInstance];
+    NSURL *url = [NSURL URLWithString:@"http://localhost/Dev_SugarIntegracion-test/" ];
+    
+    [SugarService signInWithUserName:@"tecnisys_migrador" password:@"Prueba123" ServerURL:url success:^(NSDictionary *data) {
+        NSLog(@"made it!");
+        
+    } failure:^(NSError *error) {
+        NSLog(@"failed");
+    }];
+    
+    
     
 }
 
