@@ -9,7 +9,9 @@
 #import "SRASugarCRMRemoteService.h"
 #import "SRASugarCRMRemoteService_NSURLConnection.h"
 
-/**
+
+NSString * const SRASugarRemoteServiceAuthRequiredNotification = @"SRASugarCRMRemoteServiceAuthenticationRequiredNotification";
+/*
  * The user-defaults keys for the URL of the last server the user authenticated, 
  * for the user token data and
  */

@@ -44,26 +44,27 @@ NSString * const SRAScopeKey = @"scope";
 }
 
 - (void)FillWithDictionaryData:(NSDictionary *)dict{
-    self.accessToken = [dict objectForKey:SRAAccessTokenKey];
-    self.refreshToken = [dict objectForKey:SRARefreshTokenKey];
-    self.accessTokenExpiresIn = [dict objectForKey:SRARefreshTokenExpiresInKey];
-    self.refreshTokenExpiresIn = [dict objectForKey:SRAAccessTokenExpiresInKey];
-    self.downloadToken = [dict objectForKey:SRADownloadTokenKey];
-    self.scope = [dict objectForKey:SRAScopeKey];
-    self.tokenType = [dict objectForKey:SRATokenTypeKey];
+    self.accessToken = [dict valueForKey:SRAAccessTokenKey];
+    self.refreshToken = [dict valueForKey:SRARefreshTokenKey];
+    self.accessTokenExpiresIn = [NSString stringWithFormat:@"%@", [dict valueForKey:SRAAccessTokenExpiresInKey]];
+    self.refreshTokenExpiresIn = [NSString stringWithFormat:@"%@",[dict valueForKey:SRARefreshTokenExpiresInKey]];
+    self.downloadToken = [dict valueForKey:SRADownloadTokenKey];
+    self.scope = ([[dict valueForKey:SRAScopeKey] class] != [NSNull class]) ? [dict valueForKey:SRAScopeKey] : @"";
+    self.tokenType = [dict valueForKey:SRATokenTypeKey];
 }
 
 - (NSDictionary *)dictionaryRepresentation
 {
-    return @{
+    NSDictionary *dict =  @{
              SRAAccessTokenKey: self.accessToken,
              SRARefreshTokenKey: self.refreshToken,
              SRAAccessTokenExpiresInKey: self.accessTokenExpiresIn,
-             SRAAccessTokenExpiresInKey: self.accessTokenExpiresIn,
+             SRARefreshTokenExpiresInKey: self.refreshTokenExpiresIn,
              SRATokenTypeKey: self.tokenType,
              SRADownloadTokenKey: self.downloadToken,
              SRAScopeKey: self.scope
              };
+    return dict;
 }
 
 @end

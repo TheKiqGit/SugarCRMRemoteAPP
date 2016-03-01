@@ -18,7 +18,20 @@
 		464D44DA1C76C5DD0011BDBE /* SRASugarCRMRemoteService_NSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 464D44D91C76C5DD0011BDBE /* SRASugarCRMRemoteService_NSURLConnection.m */; };
 		464D44E21C76E4130011BDBE /* NSArray+Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 464D44E11C76E4130011BDBE /* NSArray+Enumerable.m */; };
 		464D44E51C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 464D44E41C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.m */; };
+		464D44ED1C784DF90011BDBE /* SugarCRMRemoteAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 464D44EC1C784DF90011BDBE /* SugarCRMRemoteAppTests.m */; };
+		464D44F51C7972C00011BDBE /* sugarcrm.png in Resources */ = {isa = PBXBuildFile; fileRef = 464D44F41C7972C00011BDBE /* sugarcrm.png */; };
+		464D44F81C7979F10011BDBE /* SRASugarCRMRemoteAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464D44F71C7979F10011BDBE /* SRASugarCRMRemoteAuthenticationViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		464D44EF1C784DF90011BDBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 461BB4E71C5990A20044B714 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 461BB4EE1C5990A20044B714;
+			remoteInfo = SugarCRMRemoteApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		461BB4EF1C5990A20044B714 /* SugarCRMRemoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarCRMRemoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +56,23 @@
 		464D44E11C76E4130011BDBE /* NSArray+Enumerable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Enumerable.m"; sourceTree = "<group>"; };
 		464D44E31C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRASugarCRMRemoteService_NSURLConnection_Request.h; sourceTree = "<group>"; };
 		464D44E41C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRASugarCRMRemoteService_NSURLConnection_Request.m; sourceTree = "<group>"; };
+		464D44EA1C784DF90011BDBE /* SugarCRMRemoteAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarCRMRemoteAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		464D44EC1C784DF90011BDBE /* SugarCRMRemoteAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SugarCRMRemoteAppTests.m; sourceTree = "<group>"; };
+		464D44EE1C784DF90011BDBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464D44F41C7972C00011BDBE /* sugarcrm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sugarcrm.png; sourceTree = "<group>"; };
+		464D44F61C7979F10011BDBE /* SRASugarCRMRemoteAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRASugarCRMRemoteAuthenticationViewController.h; sourceTree = "<group>"; };
+		464D44F71C7979F10011BDBE /* SRASugarCRMRemoteAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRASugarCRMRemoteAuthenticationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		461BB4EC1C5990A20044B714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		464D44E71C784DF90011BDBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				461BB4F11C5990A20044B714 /* SugarCRMRemoteApp */,
+				464D44EB1C784DF90011BDBE /* SugarCRMRemoteAppTests */,
 				461BB4F01C5990A20044B714 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				461BB4EF1C5990A20044B714 /* SugarCRMRemoteApp.app */,
+				464D44EA1C784DF90011BDBE /* SugarCRMRemoteAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,11 +105,11 @@
 			children = (
 				461BB4F51C5990A20044B714 /* AppDelegate.h */,
 				461BB4F61C5990A20044B714 /* AppDelegate.m */,
+				461BB4FB1C5990A20044B714 /* Main.storyboard */,
 				464D44DF1C76E3C50011BDBE /* categories */,
 				461BB5111C6036420044B714 /* ViewControllers */,
 				461BB5091C5990C40044B714 /* Models */,
 				461BB50A1C5990D00044B714 /* Services */,
-				461BB4FB1C5990A20044B714 /* Main.storyboard */,
 				461BB4FE1C5990A20044B714 /* Assets.xcassets */,
 				461BB5001C5990A20044B714 /* LaunchScreen.storyboard */,
 				461BB5031C5990A20044B714 /* Info.plist */,
@@ -93,6 +121,7 @@
 		461BB4F21C5990A20044B714 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				464D44F41C7972C00011BDBE /* sugarcrm.png */,
 				461BB4F31C5990A20044B714 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -127,6 +156,8 @@
 			children = (
 				461BB4F81C5990A20044B714 /* ViewController.h */,
 				461BB4F91C5990A20044B714 /* ViewController.m */,
+				464D44F61C7979F10011BDBE /* SRASugarCRMRemoteAuthenticationViewController.h */,
+				464D44F71C7979F10011BDBE /* SRASugarCRMRemoteAuthenticationViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -139,6 +170,15 @@
 			);
 			name = categories;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		464D44EB1C784DF90011BDBE /* SugarCRMRemoteAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				464D44EC1C784DF90011BDBE /* SugarCRMRemoteAppTests.m */,
+				464D44EE1C784DF90011BDBE /* Info.plist */,
+			);
+			path = SugarCRMRemoteAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +201,24 @@
 			productReference = 461BB4EF1C5990A20044B714 /* SugarCRMRemoteApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		464D44E91C784DF90011BDBE /* SugarCRMRemoteAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 464D44F11C784DF90011BDBE /* Build configuration list for PBXNativeTarget "SugarCRMRemoteAppTests" */;
+			buildPhases = (
+				464D44E61C784DF90011BDBE /* Sources */,
+				464D44E71C784DF90011BDBE /* Frameworks */,
+				464D44E81C784DF90011BDBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				464D44F01C784DF90011BDBE /* PBXTargetDependency */,
+			);
+			name = SugarCRMRemoteAppTests;
+			productName = SugarCRMRemoteAppTests;
+			productReference = 464D44EA1C784DF90011BDBE /* SugarCRMRemoteAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +230,10 @@
 				TargetAttributes = {
 					461BB4EE1C5990A20044B714 = {
 						CreatedOnToolsVersion = 7.2;
+					};
+					464D44E91C784DF90011BDBE = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 461BB4EE1C5990A20044B714;
 					};
 				};
 			};
@@ -189,6 +251,7 @@
 			projectRoot = "";
 			targets = (
 				461BB4EE1C5990A20044B714 /* SugarCRMRemoteApp */,
+				464D44E91C784DF90011BDBE /* SugarCRMRemoteAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +264,14 @@
 				461BB5021C5990A20044B714 /* LaunchScreen.storyboard in Resources */,
 				461BB4FF1C5990A20044B714 /* Assets.xcassets in Resources */,
 				461BB4FD1C5990A20044B714 /* Main.storyboard in Resources */,
+				464D44F51C7972C00011BDBE /* sugarcrm.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		464D44E81C784DF90011BDBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +285,7 @@
 				461BB4FA1C5990A20044B714 /* ViewController.m in Sources */,
 				464D44E21C76E4130011BDBE /* NSArray+Enumerable.m in Sources */,
 				464D44E51C76EB150011BDBE /* SRASugarCRMRemoteService_NSURLConnection_Request.m in Sources */,
+				464D44F81C7979F10011BDBE /* SRASugarCRMRemoteAuthenticationViewController.m in Sources */,
 				461BB50D1C5990EA0044B714 /* SRASugarCRMOauthToken.m in Sources */,
 				461BB4F71C5990A20044B714 /* AppDelegate.m in Sources */,
 				461BB4F41C5990A20044B714 /* main.m in Sources */,
@@ -222,7 +294,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		464D44E61C784DF90011BDBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464D44ED1C784DF90011BDBE /* SugarCRMRemoteAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		464D44F01C784DF90011BDBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 461BB4EE1C5990A20044B714 /* SugarCRMRemoteApp */;
+			targetProxy = 464D44EF1C784DF90011BDBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		461BB4FB1C5990A20044B714 /* Main.storyboard */ = {
@@ -346,6 +434,30 @@
 			};
 			name = Release;
 		};
+		464D44F21C784DF90011BDBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SugarCRMRemoteAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TheKiq.SugarCRMRemoteAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SugarCRMRemoteApp.app/SugarCRMRemoteApp";
+			};
+			name = Debug;
+		};
+		464D44F31C784DF90011BDBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SugarCRMRemoteAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TheKiq.SugarCRMRemoteAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SugarCRMRemoteApp.app/SugarCRMRemoteApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -366,6 +478,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		464D44F11C784DF90011BDBE /* Build configuration list for PBXNativeTarget "SugarCRMRemoteAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				464D44F21C784DF90011BDBE /* Debug */,
+				464D44F31C784DF90011BDBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

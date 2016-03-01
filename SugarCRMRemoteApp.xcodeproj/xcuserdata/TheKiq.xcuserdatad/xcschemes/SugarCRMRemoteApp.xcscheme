@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "464D44E91C784DF90011BDBE"
+               BuildableName = "SugarCRMRemoteAppTests.xctest"
+               BlueprintName = "SugarCRMRemoteAppTests"
+               ReferencedContainer = "container:SugarCRMRemoteApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

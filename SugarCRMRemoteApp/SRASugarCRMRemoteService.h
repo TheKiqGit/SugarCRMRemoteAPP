@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "SRASugarCRMOauthToken.h"
 
+extern NSString * const SRASugarRemoteServiceAuthRequiredNotification;
+
 typedef void (^SRASugarCRMRemoteServiceSuccess)(NSData *data);
 typedef void (^SRASugarCRMRemoteServiceFailure)(NSError *error);
 
@@ -103,6 +105,12 @@ typedef void (^SRASugarCRMRemoteServiceFailure)(NSError *error);
                         withArguments:(NSDictionary *)URLArguments
                              success:(void(^)(NSDictionary *recordData))success
                              failure:(SRASugarCRMRemoteServiceFailure)failure;
+
+/**
+ * The current server this service instance is pointed at. This
+ * method will be nil if -isUserSignedIn returns NO
+ */
+- (NSURL *)ServerRoot;
 
 
 @end
